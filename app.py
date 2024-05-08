@@ -4,7 +4,6 @@ from langchain_openai import ChatOpenAI
 # 人間がAIに送るメッセージとAIの初期設定のメッセージ
 from langchain.schema import HumanMessage, SystemMessage
 import os
-import secret_keys  # 外部ファイルにAPI keyを保存(１つ下のコードに記載)
 
 os.environ["OPENAI_API_KEY"] = st.secrets.OpenAIAPI.openai_api_key
 
